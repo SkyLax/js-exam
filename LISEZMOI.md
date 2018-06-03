@@ -35,7 +35,7 @@ Que diable ce programme fait-il ?
 
 ### Réponse
 
-*Réponds ici*
+Ce programme récupère les données de deux appels API(Users/Posts), créer une moyenne de mots utilisé par postes suivant chaque utilisateur.
 
 ## Question 2
 
@@ -43,8 +43,9 @@ Quelles problématiques (ou y en a-t-il vraiment ?!?) peux-tu voir dans ce code 
 
 ### Réponse
 
-- *Réponds ici*
-
+- Implémentation du code logique et du HTML dans un seul et même fichier.
+- Ré-assignation de variable
+- utilisation et traitement du code parfois inutile pour la finalité du résultat souhaité
 
 - ...
 
@@ -72,6 +73,7 @@ As-tu des commentaires à propos de cet examen ou quoi que ce soit d'autre que t
 
 ### Réponse
 
-*Réponds ici*
+- Mention honorable au développeur en charge de cet exercice, ça ne devait pas être évident de se faire autant de mal en produisant ce code :/
+- Exercice très intéressant sur la logique, plusieurs vérités possible, et la liberté de faire ce que l'on souhaite
 
 ## Merci d'avoir participé! =)
