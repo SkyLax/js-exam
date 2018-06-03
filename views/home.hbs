@@ -1,0 +1,12 @@
+<div class="dialog-overlay">
+  <div class="dialog" id="toggleDialog" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+    <h2 id="dialogTitle">A great dialog</h2>
+    <ul>
+      {{#each users}}
+      <li>{{this.name}}</li>
+      {{/each}}
+    </ul>
+    <button>Close</button>
+  </div>
+</div>
+
