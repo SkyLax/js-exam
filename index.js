@@ -44,9 +44,33 @@ async.map(requests,(obj, callback) => {
   }
 });
 
+const getPostsWords = (posts) => {
+  let words = []
+  _.each(posts, (post) => {
+    words.push(post.body.split(" ").length);
+  })
+
+  return words.reduce((memo, val) => {
+    return memo + val;
+  });
+}
+
+const stats = () => {
+  let userStats = [];
+  _.each(usersList, (user) => {
+    let userPosts = postsList.filter((post) => {
+      return post.userId === user.id;
+    })
+
+    userStats.push({user, averageWordsPerPost: getPostsWords(userPosts) / userPosts.length })
+  })
+
+  return userStats;
+}
+
 app.get('/',(req, res) => {
   res.render('home', {
-      users: usersList,
+      users: stats(),
     })
 });
 

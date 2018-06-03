@@ -3,7 +3,7 @@
     <h2 id="dialogTitle">A great dialog</h2>
     <ul>
       {{#each users}}
-      <li>{{this.name}}</li>
+      <li>{{this.user.name}}: {{this.averageWordsPerPost}}</li>
       {{/each}}
     </ul>
     <button>Close</button>
